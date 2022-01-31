@@ -1,4 +1,6 @@
 package com.browserstack.stepdefs;
+package testRunner;
+
 
 import com.browserstack.local.Local;
 import com.browserstack.pageobjects.SearchPage;
@@ -12,12 +14,21 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import org.junit.runner.RunWith;
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
+@RunWith(Cucumber.class)
+public class TestRun 
+{
+	
+}
 
 public class SearchSteps {
     private WebDriver driver;
